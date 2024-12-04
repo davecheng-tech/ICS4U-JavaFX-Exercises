@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path /Users/davecheng/Documents/Code/ICS4U/javafx-sdk-23.0.1/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "basic.HelloWorld",
+            "projectName": "ICS4U-JavaFX-Exercises_88d3865d"
+        },
+        {
+            "type": "java",
+            "name": "Lesson01",
+            "request": "launch",
+            "mainClass": "basic.Lesson01",
+            "projectName": "ICS4U-JavaFX-Exercises_88d3865d"
+        },
+        {
+            "type": "java",
+            "name": "Lesson02",
+            "request": "launch",
+            "mainClass": "basic.Lesson02",
+            "projectName": "ICS4U-JavaFX-Exercises_88d3865d"
+        },
+        {
+            "type": "java",
+            "name": "Lesson03",
+            "request": "launch",
+            "mainClass": "basic.Lesson03",
+            "projectName": "ICS4U-JavaFX-Exercises_88d3865d"
+        },
+        {
+            "type": "java",
+            "name": "Lesson04",
+            "request": "launch",
+            "mainClass": "basic.Lesson04",
+            "projectName": "ICS4U-JavaFX-Exercises_88d3865d"
+        }
+    ]
+}
