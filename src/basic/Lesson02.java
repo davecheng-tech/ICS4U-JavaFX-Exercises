@@ -16,7 +16,7 @@ public class Lesson02 extends Application {
          
         // Event handler using lambda expression
         // Read more about using lambda expressions at https://www.w3schools.com/java/java_lambda.asp
-        button.setOnAction(e -> label.setText("Button Clicked!"));
+        button.setOnAction(_ -> label.setText("Button Clicked!"));
 
         // For comparison, this is a traditional event handler instead of lambda expression
         //

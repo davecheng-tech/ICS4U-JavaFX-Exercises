@@ -7,6 +7,7 @@ import javafx.scene.Scene; // Represents the container for all visual content in
 import javafx.scene.control.Button; // A JavaFX control representing a clickable button.
 import javafx.scene.control.Label; // A JavaFX control used to display text.
 import javafx.scene.layout.VBox; // A layout container that arranges its children vertically.
+import javafx.scene.layout.HBox; // A layout container that arranges its children vertically.
 import javafx.stage.Stage; // Represents the top-level container (the application window).
 
 /**
@@ -25,6 +26,8 @@ public class Lesson01 extends Application {
         // Create a label that displays text.
         // `Label` is a simple control for showing non-editable text in the window.
         Label label = new Label("Hello, JavaFX!");
+        Label myName = new Label("by @davecheng");
+        Label thisClass = new Label("ICS4U1 at St. Augustine CHS");
 
         // Create a button with a label ("Click Me").
         // `Button` is a clickable control that can perform an action when clicked.
@@ -32,11 +35,14 @@ public class Lesson01 extends Application {
 
         // Create a vertical box layout (VBox) with 10px spacing between elements.
         // VBox arranges its children (here, the label and button) in a vertical column.
-        VBox layout = new VBox(10, label, button);
+        HBox rowOfStuff = new HBox(10, myName, thisClass);
+        
+        VBox layout = new VBox(10, label, button, rowOfStuff);
 
         // Set the alignment of elements within the VBox to the center.
         // `Pos.CENTER` ensures all child elements are centered horizontally and vertically.
         layout.setAlignment(Pos.CENTER);
+        rowOfStuff.setAlignment(Pos.CENTER);
 
         // Create a scene to display the layout.
         // A scene is the container for all visual elements in the application.

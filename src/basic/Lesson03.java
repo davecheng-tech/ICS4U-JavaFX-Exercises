@@ -26,8 +26,8 @@ public class Lesson03 extends Application {
         Scene scene2 = new Scene(layout2, 300, 200);
         
         // Button actions to switch scenes, use lambda expression to be concise
-        button1.setOnAction(e -> primaryStage.setScene(scene2));
-        button2.setOnAction(e -> primaryStage.setScene(scene1));
+        button1.setOnAction(_ -> primaryStage.setScene(scene2));
+        button2.setOnAction(_ -> primaryStage.setScene(scene1));
         
         // Set up and show the stage
         primaryStage.setTitle("Scene Switching Demo");
